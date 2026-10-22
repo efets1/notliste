@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Her bir not satırının tasarımı.
+    Not metni sol tarafta, Sil düğmesi ise sağ tarafta yer alır.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Not metninin gösterileceği bileşen -->
+    <TextView
+        android:id="@+id/textViewNoteText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Her satır için Sil düğmesi -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sil" />
+
+</LinearLayout>
